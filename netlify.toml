@@ -1,5 +1,5 @@
 [build]
-  command = "npm install --legacy-peer-deps && ng build --configuration=production"
+  command = "npm install --legacy-peer-deps"
   publish = "dist/ngx-admin"
  
  
