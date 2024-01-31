@@ -1,0 +1,77 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  nb-card-body {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      width: 100%;
+    }
+  }
+}
+@include nb-install-component() {
+  .list-card {
+    nb-card-header {
+      border-bottom: none;
+    }
+
+    nb-card-body {
+      padding: 0;
+     
+    }
+    nb-list-item{
+     padding: 12px;
+     
+    }
+    nb-list{
+      height: 227px;
+      
+    }
+    nb-list::-webkit-scrollbar {
+      width: 8px;
+      height: 4px;
+    }
+    
+    nb-list::-webkit-scrollbar-thumb {
+      background-color: #7fa59f; /* Color of the scrollbar thumb */
+      border-radius: 10px;
+    }
+    
+    nb-list::-webkit-scrollbar-track {
+      background-color: #f1f1f1; /* Color of the scrollbar track */
+      border-radius: 10px;
+    }
+    
+  }
+}
+
+.third{
+  margin-top: 50px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+  justify-content: space-between; /* Distribute items evenly */
+  overflow-y: auto; 
+  max-height: 300px; /* Set a fixed height for the container */
+}
+
+// .list-card {
+//   margin-right: 10px; /* Add margin between cards for better spacing */
+// }
+
+.flex-container::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+
+.flex-container::-webkit-scrollbar-thumb {
+  background-color: #7fa59f; /* Color of the scrollbar thumb */
+  border-radius: 10px;
+}
+
+.flex-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color of the scrollbar track */
+  border-radius: 10px;
+}
